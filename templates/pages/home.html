@@ -72,6 +72,9 @@
                 } else if(xhr.status === 401) {
                     alert("You are not login. Please login to continue!");
                     window.location.href = "/login"
+                } else if(xhr.status === 403) {
+                    alert("You are not login. Please login to continue!");
+                    window.location.href = "/login"
                 }
             }
             xhr.onerror = () => {
